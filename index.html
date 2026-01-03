@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse AI | Next-Gen Analytics Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========================================
+         NAVIGATION BAR
+         ======================================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <div class="logo-mark">
+                    <span class="pulse-ring"></span>
+                    <span class="pulse-dot"></span>
+                </div>
+                <span class="logo-text">Pulse<span class="logo-ai">AI</span></span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#" class="nav-link-signin">Sign In</a>
+                <a href="#" class="btn btn-glow">Start Free Trial</a>
+            </div>
+            
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION - ANIMATED
+         ======================================== -->
+    <section class="hero">
+        <!-- Animated background elements -->
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                <span>Introducing Pulse AI 3.0</span>
+            </div>
+            
+            <h1 class="hero-title animate-in delay-1">
+                Transform Raw Data Into
+                <span class="gradient-text">Actionable Intelligence</span>
+            </h1>
+            
+            <p class="hero-description animate-in delay-2">
+                Harness the power of advanced machine learning to unlock insights hidden 
+                in your data. Real-time analytics, predictive modeling, and intelligent 
+                automation—all in one beautiful platform.
+            </p>
+            
+            <div class="hero-cta animate-in delay-3">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <span>Get Started Free</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14m-7-7l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#" class="btn btn-ghost btn-lg">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats animate-in delay-4">
+                <div class="stat">
+                    <span class="stat-value">50K+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">2.5B</span>
+                    <span class="stat-label">Data Points Processed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Uptime SLA</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating dashboard preview -->
+        <div class="hero-visual animate-in delay-5">
+            <div class="dashboard-preview">
+                <div class="dashboard-header">
+                    <div class="window-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="dashboard-title">Analytics Dashboard</span>
+                </div>
+                <div class="dashboard-body">
+                    <div class="chart-container">
+                        <div class="chart-bars">
+                            <div class="bar" style="--height: 65%"></div>
+                            <div class="bar" style="--height: 80%"></div>
+                            <div class="bar" style="--height: 45%"></div>
+                            <div class="bar" style="--height: 90%"></div>
+                            <div class="bar" style="--height: 70%"></div>
+                            <div class="bar" style="--height: 85%"></div>
+                            <div class="bar" style="--height: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mini-cards">
+                        <div class="mini-card">
+                            <span class="mini-icon">📈</span>
+                            <span class="mini-value">+24.5%</span>
+                            <span class="mini-label">Growth</span>
+                        </div>
+                        <div class="mini-card">
+                            <span class="mini-icon">👥</span>
+                            <span class="mini-value">12.4K</span>
+                            <span class="mini-label">Users</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="floating-card card-1">
+                <span class="floating-icon">🎯</span>
+                <span class="floating-text">Accuracy: 98.7%</span>
+            </div>
+            <div class="floating-card card-2">
+                <span class="floating-icon">⚡</span>
+                <span class="floating-text">Real-time sync</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TRUSTED BY SECTION
+         ======================================== -->
+    <section class="trusted">
+        <div class="container">
+            <p class="trusted-label">Trusted by innovative teams worldwide</p>
+            <div class="logo-carousel">
+                <div class="logo-track">
+                    <div class="company-logo">Stripe</div>
+                    <div class="company-logo">Notion</div>
+                    <div class="company-logo">Figma</div>
+                    <div class="company-logo">Linear</div>
+                    <div class="company-logo">Vercel</div>
+                    <div class="company-logo">Supabase</div>
+                    <div class="company-logo">Stripe</div>
+                    <div class="company-logo">Notion</div>
+                    <div class="company-logo">Figma</div>
+                    <div class="company-logo">Linear</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FEATURES SECTION
+         ======================================== -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything You Need to Make<br><span class="gradient-text">Data-Driven Decisions</span></h2>
+                <p class="section-subtitle">
+                    Powerful features designed to help you understand your data, 
+                    predict trends, and take action with confidence.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Processing</h3>
+                    <p class="feature-description">
+                        Process millions of events per second with sub-millisecond latency. 
+                        Your insights are always up-to-the-minute accurate.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Feature 2 -->
+                <article class="feature-card featured">
+                    <div class="feature-badge">Popular</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Predictive Analytics</h3>
+                    <p class="feature-description">
+                        Our AI models forecast trends before they happen. Stay ahead of 
+                        the market with predictions that are 94% accurate.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Feature 3 -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 9h6v6H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Custom Dashboards</h3>
+                    <p class="feature-description">
+                        Build beautiful, interactive dashboards in minutes. Drag, drop, 
+                        and share insights with your entire organization.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Feature 4 -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        SOC 2 Type II certified. Your data is encrypted at rest and in 
+                        transit with zero-trust architecture.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Feature 5 -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <path d="M22 6l-10 7L2 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Alerts</h3>
+                    <p class="feature-description">
+                        Get notified instantly when anomalies are detected. Set custom 
+                        thresholds and receive alerts via Slack, email, or SMS.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+
+                <!-- Feature 6 -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3v18m9-9H3"/>
+                            <circle cx="12" cy="12" r="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">200+ Integrations</h3>
+                    <p class="feature-description">
+                        Connect to your favorite tools in one click. Salesforce, HubSpot, 
+                        Snowflake, BigQuery, and many more.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more <span>→</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         HOW IT WORKS SECTION
+         ======================================== -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Get Started in <span class="gradient-text">Three Simple Steps</span></h2>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Connect Your Data</h3>
+                        <p class="step-description">
+                            Import data from any source in minutes. Our connectors handle 
+                            databases, APIs, spreadsheets, and cloud services automatically.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="data-sources">
+                            <span class="source-icon">🗄️</span>
+                            <span class="source-icon">☁️</span>
+                            <span class="source-icon">📊</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-connector">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0,10 Q50,10 100,10" stroke="url(#gradient)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">AI Does the Heavy Lifting</h3>
+                        <p class="step-description">
+                            Our machine learning models automatically clean, transform, 
+                            and analyze your data to surface meaningful patterns.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="ai-processing">
+                            <div class="processing-ring"></div>
+                            <span class="ai-icon">🧠</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-connector">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0,10 Q50,10 100,10" stroke="url(#gradient)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Take Action</h3>
+                        <p class="step-description">
+                            Get instant recommendations and insights. Set up automated 
+                            workflows or export reports to share with your team.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="action-icons">
+                            <span class="action-icon">🚀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SVG Gradient Definition -->
+            <svg width="0" height="0">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+         ======================================== -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Loved by Teams <span class="gradient-text">Everywhere</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Pulse AI transformed how we make decisions. We went from spending 
+                        days on reports to getting real-time insights in seconds. 
+                        The predictive features alone saved us $2M last quarter."
+                    </p>
+                    <footer class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Kim" class="author-avatar-img">
+                        <div class="author-info">
+                            <strong>Sarah Kim</strong>
+                            <span>VP of Operations, TechCorp</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The best analytics tool we've ever used. Period. The AI 
+                        recommendations are incredibly accurate and the dashboard 
+                        builder is a joy to use."
+                    </p>
+                    <footer class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Marcus Johnson" class="author-avatar-img">
+                        <div class="author-info">
+                            <strong>Marcus Johnson</strong>
+                            <span>Data Lead, ScaleUp Inc</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Implementation took less than a day and we saw ROI within 
+                        the first week. The integrations with our existing stack 
+                        are seamless. Highly recommend."
+                    </p>
+                    <footer class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop" alt="Elena Rodriguez" class="author-avatar-img">
+                        <div class="author-info">
+                            <strong>Elena Rodriguez</strong>
+                            <span>CTO, Growth Labs</span>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA SECTION
+         ======================================== -->
+    <section class="final-cta">
+        <div class="cta-bg">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Supercharge Your Data?</h2>
+                <p class="cta-text">
+                    Join 50,000+ teams already using Pulse AI to make smarter, faster decisions.
+                </p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-white btn-lg">
+                        Start Free Trial
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <span class="cta-note">No credit card required • 14-day free trial</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-mark">
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <span class="logo-text">Pulse<span class="logo-ai">AI</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Next-generation analytics platform powered by artificial intelligence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">GH</a>
+                        <a href="#" aria-label="Discord">DC</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers <span class="hiring-badge">Hiring!</span></a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Pulse AI, Inc. All rights reserved.</p>
+                <div class="footer-status">
+                    <span class="status-dot"></span>
+                    <span>All systems operational</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navActions = document.querySelector('.nav-actions');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navLinks.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .step, .testimonial-card').forEach(el => {
+            el.classList.add('fade-up');
+            observer.observe(el);
+        });
+
+        // Animated chart bars
+        const chartBars = document.querySelectorAll('.bar');
+        const chartObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    chartBars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.classList.add('animate');
+                        }, index * 100);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const chartContainer = document.querySelector('.chart-container');
+        if (chartContainer) {
+            chartObserver.observe(chartContainer);
+        }
+
+        // Interactive button ripple effect
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                const rect = this.getBoundingClientRect();
+                ripple.style.left = e.clientX - rect.left + 'px';
+                ripple.style.top = e.clientY - rect.top + 'px';
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+    </script>
+</body>
+</html>
